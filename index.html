@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css/style.css">
+        <script src="/javascrypt/jquery.js">
+            
+        </script>
+        <title>Brasil | mapa</title>
+
+    </head>
+    <body>
+        <header>
+
+            <h1> Mapa do brasil</h1>
+
+        </header> 
+
+        
+        <section class="regioes">
+            <figure id="todasregioes">
+                <img src="img/maparegião.png">
+            </figure>
+        </section>
+
+       
+        <section class="cadaregiao">
+            <figure id="norte">
+                <img id="fotonorte" src="img/regioes/regiao norte.png">
+            </figure>
+            <figure id="nordeste">
+                <img src="img/regioes/regiaonordeste.png">
+            </figure>
+            <figure id="centrooeste">
+                <img src="img/regioes/regiao centro oeste.png">
+            </figure>
+            <figure id=suldeste>
+                <img src="img/regioes/suldeste.png">
+            </figure>
+            <figure id="sul">
+                <img src="img/regioes/regiaosul.png">
+            </figure>
+        </section>
+      
+
+        <section class="sobre">
+
+            <article id="Rnorte">
+
+                <button class="fecha">X</button>
+
+                <figure>
+                    <img src="img/regiao norte.png">
+                </figure>
+                <figcaption>
+                    <h1> Região norte </h1>                    
+                    <p> O norte do Brasil engloba os estados de Acre, Amapá, Amazonas,<br>
+                        Pará, Rondônia, Roraima e Tocantins. A floresta tropical da Amazónia,<br>
+                        célebre pela sua biodiversidade, abrange a maior parte da região.<br>
+                        No estado do Amazonas, a cidade de Manaus encontra-se nas margens do Rio Negro <br><br>
+                        Área: 3.870.000 km²<br>
+                        População: 18 430 980 hab. 2019<br>
+                    </p>
+                </figcaption>
+
+            </article>
+
+            <article id="Rnordeste">
+
+                <button class="fecha">X</button>
+                <figure>
+                    <img src="img/regiaonordeste.png">
+                </figure>
+
+                <figcaption>
+                <h1>Região nordeste</h1>
+                <p>
+                    A Região Nordeste é uma das cinco regiões do Brasil<br>
+                    é composta por nove estados: Alagoas, Bahia, Ceará,<br>
+                    Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe.<br>
+                    definidas pelo Instituto Brasileiro de Geografia e Estatística em 1969.<br>
+                    Possui área equivalente à da Mongólia ou do estado do Amazonas,<br>
+                    população equivalente à da Itália e um IDH médio, comparável com El Salvador.<br><br>
+                    
+                    Área: 1.554.000 km²<br>
+                    População: 56 560 081 hab. 2015<br>
+                </p>
+                </figcaption>
+
+            </article>
+            <article id="Rcentrooeste">
+
+                <button class="fecha">X</button>
+                <figure>
+                    <img src="img/Região centro oeste.png">
+                </figure>
+
+
+                <figcaption>
+                <h1>Região centro oeste</h1>
+                <p>A Região Centro-Oeste é uma das cinco regiões do Brasil definidas pelo IBGE em 1969.<br>
+                    É formada por três estados: Goiás, Mato Grosso e Mato Grosso do Sul, mais o Distrito Federal,<br>
+                     onde se localiza Brasília, a capital do país e a cidade mais populosa da região.<br><br>
+                     Área: 1.612.000 km²<br>
+                     População: 16,09 milhões (1 de jul. de 2018)<br>
+                    </p>
+                </figcaption>
+                    
+            </article>
+            <article id="Rsuldeste">
+
+                <button class="fecha">X</button>
+
+                <figure>
+                    <img src="img/regiaosuldeste.png">
+                </figure>
+
+                <figcaption>
+                <h1>Região sudeste</h1>
+                <p>O sudeste brasileiro é uma região que engloba os 4 estados<br>
+                    vizinhos de Rio de Janeiro, São Paulo, Minas Gerais e Espírito Santo.<br>
+                    O estado costeiro do Rio de Janeiro é conhecido pela sua capital,<br>
+                    a cidade do Rio de Janeiro, onde os pontos de referência incluem o Pão de Açúcar<br>
+                    e a estátua do Cristo Redentor.<br>
+                    A capital do estado de São Paulo, a vasta cidade de São Paulo,<br>
+                    é o centro financeiro do Brasil e alberga edifícios icónicos como uma catedral neogótica.<br> <br>
+
+                    Área: 924.511 km²<br>
+                    População: 80,35 milhões (2010)<br>
+                </p>
+                </figcaption>
+
+            </article>
+            <article id="Rsul">
+
+                <button class="fecha">X</button>
+                <figure>
+                    <img src="img/regiapsul.png">
+                </figure>
+
+                <figcaption>
+                <h1>Região sul</h1>
+                <p>A Região Sul do Brasil é a menor das cinco regiões do país,<br>
+                    com área territorial de 576 774,31 km²<br>
+                    Divide-se em três unidades federativas: Paraná, Santa Catarina e Rio Grande do Sul.<br>
+                    sendo limitada ao norte pelos estados de São Paulo e Mato Grosso do Sul<br>
+                    ao sul pelo Uruguai, a oeste pelo Paraguai e pela Argentina<br> <br> 
+                    
+                    Área: 576.774 km²<br>
+                    População: 27,38 milhões (2010)<br>
+                </p>
+                </figcaption>
+
+            </article>
+
+
+        </section>
+        <script>
+            
+        $(document).ready(function(){
+
+            $("article").hide();
+
+        
+            $("#norte").click(function(){
+
+                $("#Rnorte").fadeIn();
+
+                $("#Rnordeste").hide();
+                $("#Rcentrooeste").hide();
+                $("#Rsuldeste").hide();
+                $("#Rsul").hide();
+
+                $(".fecha").click(function(){
+
+                    $("article").hide();
+
+                });
+
+            });
+
+            $("#nordeste").click(function(){
+                
+                $("#Rnordeste").fadeIn();
+
+                $("#Rnorte").hide();
+                $("#Rcentrooeste").hide();
+                $("#Rsuldeste").hide();
+                $("#Rsul").hide();
+
+                $(".fecha").click(function(){
+                    
+                    $("article").hide();
+
+                });
+            });
+
+             $("#centrooeste").click(function(){
+                
+                $("#Rcentrooeste").fadeIn();
+
+                
+                $("#Rnorte").hide();
+                $("#Rnordeste").hide();
+                $("#Rsuldeste").hide();
+                $("#Rsul").hide();
+
+                $(".fecha").click(function(){
+                    
+                    $("article").hide();
+
+                });
+            }); 
+            $("#suldeste").click(function(){
+                
+                $("#Rsuldeste").fadeIn();
+
+                $("#Rnorte").hide();
+                $("#Rnordeste").hide();
+                $("#Rcentrooeste").hide();
+                $("#Rsul").hide();
+
+                $(".fecha").click(function(){
+                    
+                    $("article").hide();
+
+                });
+            });
+            $("#sul").click(function(){
+
+                $("#Rsul").fadeIn();
+
+                $("#Rnorte").hide();
+                $("#Rnordeste").hide();
+                $("#Rsuldeste").hide();
+                $("#Rcentrooeste").hide();
+
+                $("fecha").click(function(){
+
+                    $("article").hide();
+
+                });
+            });
+            
+
+
+         
+
+            
+          
+               
+           
+        });
+        
+
+         
+
+        </script>
+
+
+       <footer>
+            <figure>
+                <img src="img/busola.png">
+            </figure>
+        </footer>
+
+      
+
+    </body>
+</html>

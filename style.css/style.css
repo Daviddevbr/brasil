@@ -1,0 +1,175 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image:url(/img/background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header{
+    display: flex;
+    position: relative;
+    background-image:url(/img/fundo.jpg);
+    background-position-y: -500px;
+    background-size: 1600px;
+    width: 100%;   
+}
+
+section{
+   position: absolute;
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+}
+
+ .regioes #todasregioes img{
+     position: relative;
+     width: 50%;
+ }
+
+ .cadaregiao{
+    position: absolute;
+    width: 100%;
+    top:800px;
+
+ }
+
+ .cadaregiao #norte{
+     position: absolute;
+    top:-708px;
+    left:8px;
+    
+ }
+ .cadaregiao #norte img{
+    position: relative;
+    width: 75%;
+    cursor:pointer;
+ }
+ .cadaregiao #norte img:hover{
+    top:-10px;
+    left: -12px;
+ }
+ .cadaregiao #nordeste{
+    position: absolute;
+    top:-602px;
+    left: 493px;
+   z-index: 3;
+}
+ .cadaregiao #nordeste img{
+    position: relative;
+    width:75%;
+    cursor:pointer;
+ }
+ .cadaregiao #nordeste img:hover{
+    position: relative;
+    top:10px;
+    left: 12px;
+ }
+ .cadaregiao #centrooeste{
+    position: absolute;
+    top:-471px;
+    left: 242px;
+    z-index: 1;
+ } 
+ .cadaregiao #centrooeste img{
+    width: 75%;
+    cursor:pointer;
+ } 
+ .cadaregiao #centrooeste img:hover{
+    position: relative;
+    top:10px;
+    left: -12px;
+ } 
+ .cadaregiao #suldeste{
+    position: absolute;
+    top:-350px;
+    left: 390px;
+    z-index: 4;
+ } 
+ .cadaregiao #suldeste img{
+    position: relative;
+    cursor:pointer;
+    width:75%;
+ } 
+ .cadaregiao #suldeste img:hover{
+    top:10px;
+    left: 5px;
+ } 
+ .cadaregiao #sul{
+    position: absolute;
+    top:-180px;
+    left: 314px;
+    z-index: 4;
+ } 
+ .cadaregiao #sul img{
+   cursor:pointer;
+   position: relative;
+   width:170px;
+ }
+ .cadaregiao #sul img:hover{
+   top:10px;
+    left: -12px;
+   
+}   
+
+footer figure img{
+   position: absolute;
+   width:250px;
+   left: 1330px;
+   top:700px;
+   
+}
+.sobre{
+   position: absolute; 
+   width:100%;
+   z-index: 5;
+   color:rgb(30, 54, 27);
+   font-weight: 700;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+
+   
+}
+
+.sobre img{
+   
+   width: 300px;
+   padding-bottom: 5px;
+
+}
+#Rnorte img{
+   width: 450px;
+   
+}
+#Rsul img{
+   width: 250px;
+}
+.sobre article{
+   position: absolute;
+   left: 800px;
+   top:5px;
+  
+ 
+
+
+}
+
+.fecha{
+   position: absolute;
+   left:500px;
+   background-color: rgba(0,0,0,0.2);
+   outline:none;
+   border: none;
+   color:rgb(255, 255, 255);
+   font-size: 40px;
+   width: 50px;
+   height:50px;
+   cursor: pointer;
+}
+
+.fecha:hover{
+   font-size: 45px;
+   width: 55px;
+   height:55px;
+   background-color: rgba(0,0,0,0.5);
+   
+}
